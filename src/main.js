@@ -5,6 +5,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import axios from "@/api/http"
+Vue.prototype.$http = axios
+
 new Vue({
   router,
   store,
